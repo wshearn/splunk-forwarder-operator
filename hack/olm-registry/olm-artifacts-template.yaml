@@ -86,6 +86,13 @@ objects:
         - get
         - create
       - apiGroups:
+        - config.openshift.io
+        resources:
+        - proxies.config.openshift.io
+        verbs:
+        - get
+        - list
+      - apiGroups:
         - apps
         resourceNames:
         - splunk-forwarder-operator
